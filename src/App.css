@@ -75,13 +75,13 @@ color: #404242;
 
       .link.active::after {
         color: #58A9A5;
-        font-weight: 700;
+        font-weight: 500;
         width: 50%;
       }
 
       .link.active {
         color: #58A9A5;
-        font-weight: 600;
+        font-weight: 500;
       }
     }
 

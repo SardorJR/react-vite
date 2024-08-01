@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,9 +12,28 @@ function App() {
   //   setUsers([...users, name])
   //   console.log(name);
   // }
+  useEffect(() => {
+    document.querySelectorAll('.link').forEach(link => {
+      link.onclick=(event)=>{
+        event.preventDefault()
 
-  let links = document.querySelectorAll('.link')
+        document.querySelectorAll('.link').forEach(item => {
+          item.classList.remove('active')
+        })
 
+        link.classList.add('active')
+      }})
+  
+  }, [])
+  // let links = document.querySelectorAll('.link')
+  // links.forEach(link  => {
+  //   item.onclick = () => {
+  //     links.forEach(item => item.classList.remove('active'))
+
+     
+  //     link.classList.add('active')
+  //   }
+  // })
 
   return (
     <>
@@ -146,15 +165,15 @@ function App() {
             <div className="border"></div>
             <div className="border"></div>
           </div>
-          <div className="right-contact">
+          <form className="right-contact">
             <input type="text" placeholder='Full name' />
             <input type="text" placeholder='Email address' />
             <textarea name="Description" placeholder='Description'></textarea>
             <div className="send">
-            <button>Send now</button>
+              <button>Send now</button>
             </div>
-          </div>
-          
+          </form>
+
         </section>
       </div>
       {/* <center>
