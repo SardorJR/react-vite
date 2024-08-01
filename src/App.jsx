@@ -90,7 +90,7 @@ function App() {
             </div>
             <div className="item">
               <div className="images">
-                <img src="/public/img/2.png" alt="" />
+                <img src="/img/2.png" alt="" />
               </div>
               <span>Project workspace</span>
               <p>A simple guide to create the perfect livingro- om for . Night Watc works beautifully in a wi- de gamut of arrangements.</p>
@@ -115,7 +115,7 @@ function App() {
             </div>
             <div className="testimonial2" id='testimonial'>
               <div className="left-testi">
-                <img src="/public/img/Rectangle 18.png" alt="" />
+                <img src="/img/Rectangle 18.png" alt="" />
               </div>
               <div className="right-testi">
                 <div className="dannie">
@@ -134,7 +134,7 @@ function App() {
                 </div>
                 <h3>"Not able to tell you how happy I am with interior design. Interior design has completely surpassed our expectations. Interior design saved my business. Interior design is worth much more than I paid."</h3>
                 <h5>- Roscoe</h5>
-                <img src="/public/img/“.png" alt="" />
+                <img src="/img/“.png" alt="" />
               </div>
             </div>
           </div>
